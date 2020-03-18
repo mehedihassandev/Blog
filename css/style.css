@@ -1,0 +1,459 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.bg {
+    background: rgba(0, 0, 0, 0.7);
+    animation: navbar 1s;
+}
+
+@keyframes navbar {
+    from {
+        top: -80px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.back2top i {
+    width: 40px;
+    height: 40px;
+    color: #222;
+    background: #f73b3b;
+    line-height: 40px;
+    text-align: center;
+}
+
+.back2top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+
+/*=================Navbar Part CSS Start====================*/
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 30px;
+    padding: 15px 20px;
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Alegreya', serif;
+    color: #fff;
+    transition: all linear .3s;
+    padding: 0 10px;
+    margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f73b3b;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand span {
+    color: #f73b3b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    padding: 5px 15px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: #f73b3b;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f73b3b;
+}
+
+
+.hvr-underline-from-center:before {
+    background: #f73b3b;
+    height: 1px;
+}
+
+
+.navbar-brand img{
+    padding: 0 10px;
+}
+
+
+/*================Banner Part CSS==============*/
+#banner {
+    padding-top: 250px;
+    padding-bottom: 150px;
+    background: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+#banner:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.banner-img {
+    position: relative;
+
+}
+
+.banner-header {
+    position: absolute;
+    z-index: 99999;
+}
+
+.banner-link {
+    position: absolute;
+    z-index: 9999;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -3%;
+}
+
+.banner-header {
+    position: relative;
+    z-index: 99;
+}
+
+.banner-header h1 {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Alegreya', serif;
+    color: #fff;
+    letter-spacing: 7px;
+}
+
+.banner-header p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 26px;
+    padding: 0 180px;
+}
+
+.banner-link a {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Alegreya', serif;
+    color: #f73b3b;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    transition: all linear .3s;
+}
+
+.banner-a {
+    padding-top: 100px;
+}
+
+.banner-a i{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.banner-a i:hover {
+    text-decoration: none;
+    background: #f73b3b;
+    color: #222;
+}
+/*==================Preeloader CSS Part Start======================*/
+#story{
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.story-header h2{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Alegreya',serif;
+    color: #222;
+}
+.story-item{
+    padding-top: 30px;
+    
+    
+}
+.story-item h5{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 15px;
+    transition: all linear .3s;
+}
+.story-item:hover h5{
+    color: #f73b3b;
+}
+.story-item p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-right: 50px;
+    transition: all linear .3s;
+}
+.story-item:hover p{
+    color: #f73b3b;
+}
+.story-item .second-p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-left: 50px;
+    padding-right: 0;
+}
+.story-item a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    transition: all linear .3s;
+}
+.story-item:hover a{
+    color: #f73b3b;
+}
+.story-item a:hover{
+    color: #222;
+    text-decoration: none;
+}
+.story-item img{
+    width: 200px;
+    height: 200px;
+}
+
+/*==================Gallary CSS Part Start======================*/
+#gallary {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.gallary-img img {
+    width: 100%;
+    transition: all linear .3s;
+}
+
+.gallary-img {
+    position: relative;
+    margin-top: 30px;
+}
+
+.gallary-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.gallary-overlay i {
+    position: relative;
+    font-size: 20px;
+    color: #f73b3b;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: all linear .3s;
+}
+
+.gallary-img:hover .gallary-overlay {
+    opacity: 1;
+}
+
+.gallary-img:hover .gallary-overlay i {
+    top: 50%;
+}
+
+.gallary-img:hover img {
+    transform: scale(1.2);
+}
+
+.gallary-img {
+    overflow: hidden;
+}
+
+.gallary-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 10px;
+}
+
+/*==================Subcribe CSS Part Start======================*/
+#subscribe{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.subscribe-header h2{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 15px;
+}
+.subscribe-header p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 15px;
+}
+.subscribe-from input {
+    padding: 10px 150px 10px 10px;
+    margin-left: 300px;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+.subscribe-from button {
+    padding: 10px 25px;
+    margin-right: 226px;
+    border: 0;
+    background: #292929;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+
+
+
+/*==================Footer CSS Part Start======================*/
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer h2{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+/*==================Preeloader CSS Part Start======================*/
+.load {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999999999;
+    background: #fff;
+}
+
+body {
+    overflow: hidden;
+}
+
+.load img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.load_finish {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*
+    font-family: 'Alegreya',serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Open Sans', sans-serif;
+*/
